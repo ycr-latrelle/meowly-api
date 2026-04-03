@@ -1,0 +1,38 @@
+{
+  "rules": {
+    ".read":  false,
+    ".write": false,
+
+    "customers": {
+      ".indexOn": ["email"],
+      "$uid": {
+        ".read":  true,
+        ".write": true
+      }
+    },
+
+    "employees": {
+      ".indexOn": ["email", "employeeId"],
+      "$uid": {
+        ".read":  true,
+        ".write": true
+      }
+    },
+
+    "appointments": {
+      ".indexOn": ["customerId", "status", "dateTime"],
+      "$uid": {
+        ".read":  true,
+        ".write": true
+      }
+    },
+
+    "products": {
+      ".indexOn": ["category"],
+      ".read":  true,
+      "$uid": {
+        ".write": true
+      }
+    }
+  }
+}

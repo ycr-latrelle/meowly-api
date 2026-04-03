@@ -1,0 +1,6 @@
+@Meowly_Web_API_ASP.NET_HostAddress = http://localhost:5074
+
+GET {{Meowly_Web_API_ASP.NET_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
